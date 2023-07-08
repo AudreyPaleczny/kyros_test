@@ -10,15 +10,14 @@
 </body>
 <script>
     let colors=["red", "green", "blue", "brown"];
+    let len=colors.length;
     let index =0;
     const myBtn = document.getElementById("button");
     button.addEventListener("click", function changeColor(){
         button.style.backgroundColor=colors[index]; 
-        index= index+1; 
+        console.log(index, colors.length);
+        index= (index+1) % len; 
     })
- //function buttonColor() {
- //  document.getElementById("button").style.backgroundColor= '#911';
- //}
 
 </script>
 </html>
