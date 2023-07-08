@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-   <button id="button">Click for Color!!</button>
+   <button id = "button">Click for Color!!</button>
 </body>
 <script>
-    let colors=["red", "green", "blue", "brown"];
-    let len=colors.length;
-    let index =0;
+    let colors = ["red", "green", "blue", "brown"];
+    let len = colors.length;
+    let index = 0;
     const myBtn = document.getElementById("button");
     button.addEventListener("click", function changeColor(){
         button.style.backgroundColor=colors[index]; 
         console.log(index, colors.length);
-        index= (index+1) % len; 
+        index = (index+1) % len; 
     })
 
 </script>
